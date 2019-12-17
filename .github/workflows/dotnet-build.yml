@@ -6,7 +6,7 @@ on:
       - '**'
   push:
     branches:
-      - development
+      - master
 
 env:
   SONAR_KEY: rnm-order-service-demo
