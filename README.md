@@ -1,4 +1,4 @@
-## RightNow Media Services Demo
+## RightNow Media Demo Service
 
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=rnm-order-service-demo&metric=alert_status)](https://sonarcloud.io/dashboard/index/OrderServiceDemo)
 
