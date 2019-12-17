@@ -1,0 +1,30 @@
+name: .NET Web App (Tests)
+
+on:
+  pull_request:
+    branches:
+      - '**'
+  push:
+    branches:
+      - master
+
+env:
+  SONAR_KEY: rnm-order-service-demo
+  TEST_PROJECT: OrderServiceDemo.Unit.Tests
+  SONAR_LOGIN: bf0ddfeab1404e2fc12b784e259c28b21edfdbbc
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 2.1.403
+    - name: Build project and trigger Sonar scan
+      run: |
+        curl -O https://s3.amazonaws.com/build.rightnow/Infrastructure/Automation/scripts/sonar-dotnet-tests-gh.sh
+        chmod +x ./sonar-dotnet-tests-gh.sh
+        ./sonar-dotnet-tests-gh.sh

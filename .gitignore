@@ -30,7 +30,6 @@ packages/
 .vs/
 src/**/project.lock.json
 test/**/project.lock.json
-tests/**/project.lock.json
 nuget.exe
 src/**/[Pp]roperties/PublishProfiles/**
 
