@@ -1,6 +1,5 @@
 ## RightNow Media Services Demo
 
-[![Build Status](https://travis-ci.com/RightNowMinistries/OrderServiceDemo.svg?branch=master)](https://travis-ci.com/RightNowMinistries/OrderServiceDemo)
 [![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=OrderServiceDemo&metric=alert_status)](https://sonarcloud.io/dashboard/index/OrderServiceDemo)
 
 The RightNow Media back-end platform consists of several web apis running .net core on linux-based containers. On average, the back end services are processing 40,000 web calls per minute, built to be highly scalable and high throughput (our target is to serve 99% of requests in less than 1 second. Our average response time on these requests is less than 100 ms).
